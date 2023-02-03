@@ -1,0 +1,87 @@
+body {
+  font-family: "Akshar", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  color: #005577;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer {
+  padding: 25px;
+  margin: 0;
+  background-color: #494949;
+}
+
+.footer-contenedor {
+  text-align: center;
+  display: block;
+  /*justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;*/
+}
+
+.redes-ima {
+  width: 30px;
+  margin-top: 30px;
+}
+
+.logo-ima {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-politicas a {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.link-redes {
+  margin: 5px;
+}
+
+.footer-politicas a:hover {
+  color: #a1ce4c;
+}
+
+.redes-ima:hover {
+  transform: scale(1.09);
+}
+
+.derechos {
+  font-size: 9px;
+  margin-top: 10px;
+  color: #f2f2f2;
+  font-weight: 200;
+}
+
+/*-----Responsive-----*/
+
+@media (min-width: 750px) {
+  .footer-contenedor {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    max-width: 1000px;
+  }
+
+  .link-redes {
+    margin: 5px;
+  }
+  .redes-ima {
+    width: 30px;
+    margin: 0;
+  }
+
+  .logo-ima {
+    width: 70px;
+    margin: 0;
+  }
+}

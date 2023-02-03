@@ -1,0 +1,99 @@
+body {
+  font-family: "Akshar", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  color: #005577;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.servicios-title {
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center;
+  margin: 15px;
+}
+
+.servicios-name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.servicios-description {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 15px;
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+.servicios {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*-------Responsive------*/
+
+@media (min-width: 950px) {
+  .servicios-title {
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .servicios-name {
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+
+  .servicios-description {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 15px;
+    margin-top: 5px;
+    line-height: 1.3;
+  }
+
+  .servicios-left {
+    text-align: right;
+  }
+
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+  }
+
+  .line {
+    background-color: #a1ce4c;
+    position: relative;
+  }
+
+  .line::before,
+  .line::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #a1ce4c;
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+  .line::after {
+    top: 100%;
+  }
+}

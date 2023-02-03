@@ -1,0 +1,129 @@
+body {
+  font-family: "Akshar", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+  color: #005577;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+/* Cabecera */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topheader {
+  background: #005577;
+  height: 70px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Logo*/
+
+.imglogo {
+  width: 170px;
+  height: 47px;
+  padding: 13px 13px;
+}
+
+/* Menu*/
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 14px;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.menu a:hover,
+.menu a.selected {
+  color: #a1ce4c;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/*--------------Movile------------------------------*/
+
+@media (max-width: 650px) {
+  /* Menu*/
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #f2f2f2;
+    height: 100%;
+    overflow-y: auto;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    color: #005577;
+    line-height: 60px;
+    font-size: 20px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu img {
+    width: 25px;
+    height: 25px;
+    padding: 23px 10px;
+  }
+
+  .open-menu img {
+    width: 25px;
+    height: 25px;
+    padding: 22px 10px;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
